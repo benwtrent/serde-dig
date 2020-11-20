@@ -1,7 +1,7 @@
 # serde-dig
-Adds new method to serde_json::Value objects that allows recursive exploration
+Adds new method to `serde_json::Value` objects that allows recursive exploration
 
-I wanted a function similar to Ruby's (Hash#dig)[https://ruby-doc.org/core-2.3.0_preview1/Hash.html#method-i-dig] but 
+I wanted a function similar to Ruby's [Hash#dig](https://ruby-doc.org/core-2.3.0_preview1/Hash.html#method-i-dig) but 
 came up empty with searching.
 
 When you want something done, just do it. 
