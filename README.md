@@ -16,6 +16,7 @@ Adds new method to serde_json::Value objects that allows recursive exploration
              "+44 2345678"
          ]
      });
-     println!("first phone number: {}", john.get_deep(&["phones".into(), 0.into()]).unwrap());
+     let path:&[DigIndex] = &["phones".into(), 0.into()];
+     println!("first phone number: {}", john.get_deep(path).unwrap());
  }
 ```

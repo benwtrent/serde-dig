@@ -6,7 +6,7 @@
 //! Example:
 //! ```
 //! use serde_json::json;
-//! use serde_dig::{Dig};
+//! use serde_dig::{Dig, DigIndex};
 //! fn main() {
 //!     // The type of `john` is `serde_json::Value`
 //!     let john = json!({
@@ -17,7 +17,8 @@
 //!             "+44 2345678"
 //!         ]
 //!     });
-//!     println!("first phone number: {}", john.get_deep(&["phones".into(), 0.into()]).unwrap());
+//!     let path:&[DigIndex] = &["phones".into(), 0.into()];
+//!     println!("first phone number: {}", john.get_deep(path).unwrap());
 //! }
 //! ```
 use serde_json::{Value};
